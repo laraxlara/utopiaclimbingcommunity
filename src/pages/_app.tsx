@@ -1,4 +1,4 @@
-import type { AppType } from "next/app";
+import { AppType } from "next/app";
 import { useRouter } from "next/router";
 import { IntlProvider } from "react-intl";
 import en from '../../lang/en.json'

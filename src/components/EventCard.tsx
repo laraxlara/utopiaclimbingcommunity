@@ -8,7 +8,7 @@ type Props = {
   alt: string;
   name: string;
   date: number | string;
-  description: React.ReactNode;
+  description: React.ReactNode | string;
 };
 
 const Card = ({ src, alt, name, date, description }: Props) => {

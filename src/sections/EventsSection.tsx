@@ -30,7 +30,7 @@ const Section4 = () => {
     alt: "Utopia Forest Party event",
     name: "UTOPIA FOREST PARTY",
     date: "U PRIPREMI",
-    description: <FormattedMessage id="" />,
+    description: "",
   };
 
   return (
