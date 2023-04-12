@@ -1,20 +1,21 @@
 import React from "react";
 import Image from "next/image";
 import { MdOutlineKingBed, MdOutlineSingleBed } from "react-icons/md";
+import roomImg1 from "../../public/images/room1.jpeg";
 
 type Props = {
-  src: string;
+  // src: string;
   alt: string;
-  name: string;
-  description1: string;
-  description2: string;
+  name: React.ReactNode;
+  description1: React.ReactNode;
+  description2: React.ReactNode | undefined;
 };
 
-const Card = ({ src, alt, name, description1, description2 }: Props) => {
+const Card = ({ alt, name, description1, description2 }: Props) => {
   return (
     <div className="max-w-xl h-[500px] w-full rounded overflow-hidden shadow-lg flex flex-col justify-center items-center">
       <Image
-        src={src}
+        src={roomImg1}
         alt={alt}
         style={{ width: "100%", height: "auto" }}
       />

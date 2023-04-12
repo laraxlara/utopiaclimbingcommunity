@@ -12,23 +12,25 @@ type Props = {};
 
 const Section4 = (props: Props) => {
   const room1 = {
-    src: roomImg1,
+    // src: roomImg1,
     alt: "Single bed & Double bed room",
     name: <FormattedMessage id="page.home.room.one" />,
     description2: <FormattedMessage id="page.home.room.one.desc" />,
     description1: <FormattedMessage id="page.home.room.two.desc" />,
   };
   const room2 = {
-    src: roomImg2,
+    // src: roomImg2,
     alt: "Three bed room",
     name: <FormattedMessage id="page.home.room.three" />,
     description1: <FormattedMessage id="page.home.room.three.desc" />,
+    description2: undefined,
   };
   const room3 = {
-    src: roomImg3,
+    // src: roomImg3,
     alt: "Four bed room",
     name: <FormattedMessage id="page.home.room.four" />,
     description1: <FormattedMessage id="page.home.room.four.desc" />,
+    description2: undefined,
   };
 
   return (
