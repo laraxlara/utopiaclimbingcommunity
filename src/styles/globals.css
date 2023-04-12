@@ -1,0 +1,92 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Anuphan:wght@100&family=Montserrat:wght@100&display=swap");
+
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-lg: "Abhaya Libre", serif;
+  --font-sm: "Abhaya Libre", serif;
+
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --primary-glow: conic-gradient(
+    from 180deg at 50% 50%,
+    #16abff33 0deg,
+    #0885ff33 55deg,
+    #54d6ff33 120deg,
+    #0071ff33 160deg,
+    transparent 360deg
+  );
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: var(--font-lg);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+}
+
+h1 {
+  color: white;
+  font-family: var(--font-lg);
+  font-size: 7rem;
+  line-height: 10rem;
+  padding-bottom: 2.7rem;
+}
+
+h2,
+h3 {
+  color: white;
+  font-family: var(--font-lg);
+  font-weight: 100;
+  font-size: 6rem;
+  line-height: 11rem;
+  padding-bottom: 2.7rem;
+}
+
+p {
+  color: rgb(203, 203, 203);
+  font-size: 2rem;
+  line-height: 3.7rem;
+  padding-right: 4rem;
+  /* font-family: var(--font-sm); */
+}
+
+a {
+  width: 190px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(210, 210, 210, 0.184);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
+  text-decoration: none;
+  color: white;
+  font-family: var(--font-lg);
+}
+
+a:hover {
+  background: rgba(188, 188, 188, 0.779);
+  transition: 0.5s ease-out;
+}
