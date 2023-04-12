@@ -23,14 +23,14 @@ const Section4 = () => {
     alt: "Sound healing with Peter Hess event",
     name: "SOUND HEALING WITH PETER HESS",
     date: "26 - 28 Maj",
-    // description: <FormattedMessage id="page.home.event.one" />,
+    description: <FormattedMessage id="page.home.event.one" />,
   };
   const event3 = {
     src: eventImg3,
     alt: "Utopia Forest Party event",
     name: "UTOPIA FOREST PARTY",
     date: "U PRIPREMI",
-    description: "",
+    description: <FormattedMessage id="" />,
   };
 
   return (
