@@ -1,10 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import type { ImageLoaderProps } from 'next/image';
-import { MdOutlineKingBed, MdOutlineSingleBed } from "react-icons/md";
 
 type Props = {
-  src: any;
+  src: string | any;
   alt: string;
   name: string;
   date: number | string;

@@ -1,12 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import { useRouter } from "next/router";
 import { FormattedMessage} from "react-intl";
 import caveImg from "../../public/images/cave.jpg";
 
-type Props = {};
-
-const Section11 = (props: Props) => {
+const Section11 = () => {
   return (
     <section className="relative w-full h-[100%] xl:h-[100vh] bg-black">
       <div className="relative xl:absolute w-full h-[100%] xl:h-[100vh] top-0 left-0 bottom-0 right-0 flex flex-col xl:flex-row">

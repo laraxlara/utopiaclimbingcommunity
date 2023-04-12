@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -8,10 +8,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 import rs from '../../public/images/rs.png'
 import en from '../../public/images/en.jpg'
 
-type Props = {
-};
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   const { locales } = useRouter();
   console.log(typeof(locales))
   const [isOpen, setIsOpen] = useState(false);

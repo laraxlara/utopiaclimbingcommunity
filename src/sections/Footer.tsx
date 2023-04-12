@@ -2,16 +2,12 @@ import React from "react";
 import Image from "next/image";
 import { FormattedMessage } from "react-intl";
 import {
-  AiFillPhone,
-  AiOutlineMail,
   AiFillInstagram,
   AiFillFacebook,
 } from "react-icons/ai";
 import footerImg from "../../public/images/logo_white.png";
 
-type Props = {};
-
-function Footer({}: Props) {
+function Footer() {
   return (
     <section className="section h-[100%] bg-black relative">
       <div className="max-w-screen-xl my-0 mx-auto px-4 flex flex-col items-center justify-between md:flex-row text-start overflow-y-hidden">

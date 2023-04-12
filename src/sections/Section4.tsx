@@ -1,16 +1,12 @@
 import React from "react";
-import Image from "next/image";
 import Card from "@/components/Card";
-import { MdOutlineKingBed, MdOutlineSingleBed } from "react-icons/md";
 import { FormattedMessage } from "react-intl";
 
-import roomImg1 from "../../public/images/room1.jpeg";
-import roomImg2 from "../../public/images/room2.jpg";
-import roomImg3 from "../../public/images/room3.jpeg";
+// import roomImg1 from "../../public/images/room1.jpeg";
+// import roomImg2 from "../../public/images/room2.jpg";
+// import roomImg3 from "../../public/images/room3.jpeg";
 
-type Props = {};
-
-const Section4 = (props: Props) => {
+const Section4 = () => {
   const room1 = {
     // src: roomImg1,
     alt: "Single bed & Double bed room",

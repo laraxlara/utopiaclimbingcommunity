@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import * as yup from "yup";
-import { useRouter } from "next/router";
-import { FormattedMessage, useIntl } from "react-intl";
+import { FormattedMessage } from "react-intl";
 
 const valuesSchema = yup.object({
   email: yup.string(),
@@ -11,28 +10,21 @@ const valuesSchema = yup.object({
 
 type Values = yup.InferType<typeof valuesSchema>;
 
-type Props = {
-  form: string;
-  values: Array<{ email: string; subject: string; message: string }>;
-  handleChange: (e: React.FormEvent<HTMLInputElement>) => void;
-};
+// type Props = {
+//   form: string;
+//   values: Array<{ email: string; subject: string; message: string }>;
+//   handleChange: (e: React.FormEvent<HTMLInputElement>) => void;
+// };
 
 type State = {
   state: string;
 };
 
 function ContactForm() {
-  const { locales } = useRouter();
-
-  const intl = useIntl();
   const [values, setValues] = useState<Values>({
     email: "",
     subject: "",
     message: "",
-  });
-
-  const [form, setForm] = useState<State>({
-    state: "",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -47,7 +39,6 @@ function ContactForm() {
     console.log(values);
 
     if (values.email && values.subject && values.message) {
-      setForm({ state: "loading" });
       try {
         const res = await fetch(`api/contact`, {
           method: "POST",

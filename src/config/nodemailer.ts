@@ -1,4 +1,3 @@
-import { NextApiResponse, NextApiRequest } from "next";
 import nodemailer from "nodemailer";
 
 export const transporter = nodemailer.createTransport({

@@ -12,14 +12,6 @@ const messages = {
 
 type Locale = keyof typeof messages;
 
-function getDirection(locale: any) {
-  if (locale === "sr") {
-    return "rtl";
-  }
-
-  return "ltr";
-}
-
 const MyApp: AppType = ({ Component, pageProps }) => {
   const { locale } = useRouter();
   return (

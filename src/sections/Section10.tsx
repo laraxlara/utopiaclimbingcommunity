@@ -1,16 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import { FaPaw } from "react-icons/fa";
-import { useRouter } from "next/router";
-import { FormattedMessage, useIntl } from "react-intl";
+import { FormattedMessage } from "react-intl";
 import img9 from "../../public/images/9.jpg";
 
-type Props = {};
-
-const Section10 = (props: Props) => {
-  const { locales } = useRouter();
-
-  const intl = useIntl();
+const Section10 = () => {
   return (
     <section
       id="activities-section"

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { MdOutlineKingBed, MdOutlineSingleBed } from "react-icons/md";
+import { MdOutlineKingBed } from "react-icons/md";
 import roomImg1 from "../../public/images/room1.jpeg";
 
 type Props = {

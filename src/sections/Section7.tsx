@@ -1,16 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import { useRouter } from "next/router";
-import { FormattedMessage, useIntl } from "react-intl";
+import { FormattedMessage} from "react-intl";
 
 import img6 from "../../public/images/6.jpeg";
 
-type Props = {};
-
-const Section7 = (props: Props) => {
-  const { locales } = useRouter();
-
-  const intl = useIntl();
+const Section7 = () => {
   return (
     <section className="section w-[100%] h-[100%] xl:h-[100vh] bg-black flex justify-center items-center">
       <div className="max-w-screen-xl my-0 mx-auto px-6 flex flex-col sm:flex-row justify-center items-center gap-8">

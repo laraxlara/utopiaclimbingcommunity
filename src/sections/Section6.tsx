@@ -1,13 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
-
 import footerImg from "../../public/images/footer.jpeg";
-import logo from "../../public/images/logo_white.png";
 
-type Props = {};
-
-const Section6 = (props: Props) => {
+const Section6 = () => {
   return (
     <section
       id="contact-section"

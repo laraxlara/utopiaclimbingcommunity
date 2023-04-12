@@ -6,9 +6,6 @@ import eventImg1 from "../../public/images/event1.jpeg";
 import eventImg2 from "../../public/images/event2.jpeg";
 import eventImg3 from "../../public/images/event3.jpeg";
 
-type Props = {
-};
-
 const Section4 = () => {
 
   const event1 = {

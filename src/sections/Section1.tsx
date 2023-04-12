@@ -1,15 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import { useRouter } from "next/router";
-import { FormattedMessage, useIntl } from "react-intl";
+import { FormattedMessage } from "react-intl";
 import img1 from "../../public/images/1.jpeg";
 
-type Props = {};
-
-const Section1 = (props: Props) => {
-  const { locales } = useRouter();
-
-  const intl = useIntl();
+const Section1 = () => {
   return (
     <section className="section w-[100%] h-[100%] xl:h-[100vh] bg-black flex justify-center items-center">
       <div className="max-w-screen-xl my-0 px-6 py-10 xl:py-0 mx-auto flex flex-col sm:flex-row justify-center items-center">

@@ -1,17 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import { useRouter } from "next/router";
-import { FormattedMessage, useIntl } from "react-intl";
+import { FormattedMessage } from "react-intl";
 import img51 from "../../public/images/51.png";
 import img52 from "../../public/images/52.png";
 import img53 from "../../public/images/53.png";
 
-type Props = {};
-
-function Section5({}: Props) {
-  const { locales } = useRouter();
-
-  const intl = useIntl();
+function Section5() {
   return (
     <section className="section w-full h-[100%] xl:h-[100vh] bg-black flex justify-center items-center">
       <div className="max-w-screen-xl my-0 mx-auto px-6 flex flex-col justify-center items-center">

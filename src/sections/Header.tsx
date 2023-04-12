@@ -6,9 +6,8 @@ import Navbar from "@/components/Navbar";
 import headerImage from "../../public/images/header1.jpeg";
 import logo from "../../public/images/logo.png";
 
-type Props = {};
 
-const Header = (props: Props) => {
+const Header = () => {
   return (
     <div className="section relative w-[100%] h-[600px] xl:h-[100vh]">
       <div className="absolute w-[100%] h-[100%] top-0 z-[-1]">

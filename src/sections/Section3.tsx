@@ -2,15 +2,9 @@ import React from "react";
 import Image from "next/image";
 import img3 from "../../public/images/3.jpeg";
 import { AiOutlineArrowDown } from "react-icons/ai";
-import { useRouter } from "next/router";
-import { FormattedMessage, useIntl } from "react-intl";
+import { FormattedMessage } from "react-intl";
 
-type Props = {};
-
-const Section3 = (props: Props) => {
-  const { locales } = useRouter();
-
-  const intl = useIntl();
+const Section3 = () => {
   return (
     <section
       id="accomodation-section"
