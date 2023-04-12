@@ -24,7 +24,7 @@ function ContactForm() {
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log('hello')
+    console.log(e)
     // setValues({
     //   ...values,
     //   [(e.target as HTMLInputElement).id]: (e.target as HTMLInputElement).value,
@@ -33,7 +33,7 @@ function ContactForm() {
 
   const onSubmitForm = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(values);
+    await console.log(values);
     setValues(values)
 
     // if (values.email && values.subject && values.message) {
