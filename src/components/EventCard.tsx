@@ -1,8 +1,8 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 type Props = {
-  src: string | any;
+  src: string | StaticImageData;
   alt: string;
   name: string;
   date: number | string;

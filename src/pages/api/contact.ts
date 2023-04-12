@@ -45,7 +45,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<Response>) => {
 
     res.status(200).send({ status: "done", message: "message has been sent" });
   } catch (error) {
-    res.status(500).send({ status: "fail", error: `${error}` });
+    res.status(500).send({ status: "fail" });
   }
 };
 

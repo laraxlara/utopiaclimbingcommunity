@@ -16,10 +16,6 @@ type Values = yup.InferType<typeof valuesSchema>;
 //   handleChange: (e: React.FormEvent<HTMLInputElement>) => void;
 // };
 
-type State = {
-  state: string;
-};
-
 function ContactForm() {
   const [values, setValues] = useState<Values>({
     email: "",
@@ -28,36 +24,38 @@ function ContactForm() {
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setValues({
-      ...values,
-      [(e.target as HTMLInputElement).id]: (e.target as HTMLInputElement).value,
-    });
+    console.log('hello')
+    // setValues({
+    //   ...values,
+    //   [(e.target as HTMLInputElement).id]: (e.target as HTMLInputElement).value,
+    // });
   };
 
   const onSubmitForm = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(values);
+    setValues(values)
 
-    if (values.email && values.subject && values.message) {
-      try {
-        const res = await fetch(`api/contact`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(values),
-        });
+    // if (values.email && values.subject && values.message) {
+    //   try {
+    //     const res = await fetch(`api/contact`, {
+    //       method: "POST",
+    //       headers: {
+    //         "Content-Type": "application/json",
+    //       },
+    //       body: JSON.stringify(values),
+    //     });
 
-        const { error } = await res.json();
+    //     const { error } = await res.json();
 
-        if (error) {
-          console.log(error);
-          return;
-        }
-      } catch (error) {
-        console.log(error);
-      }
-    }
+    //     if (error) {
+    //       console.log(error);
+    //       return;
+    //     }
+    //   } catch (error) {
+    //     console.log(error);
+    //   }
+    // }
   };
 
   return (

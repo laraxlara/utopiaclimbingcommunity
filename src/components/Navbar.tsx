@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-non-null-assertion */
+
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -12,7 +14,6 @@ const Navbar = () => {
   const { locales } = useRouter();
   console.log(typeof(locales))
   const [isOpen, setIsOpen] = useState(false);
-  const intl = useIntl();
   return (
     <>
       <nav className="max-w-screen-xl my-0 mx-auto">
