@@ -8,10 +8,12 @@ import { AiOutlineClose } from 'react-icons/ai'
 import rs from '../../public/images/rs.png'
 import en from '../../public/images/en.jpg'
 
-type Props = {};
+type Props = {
+};
 
 const Navbar = (props: Props) => {
   const { locales } = useRouter();
+  console.log(typeof(locales))
   const [isOpen, setIsOpen] = useState(false);
   const intl = useIntl();
   return (
@@ -40,7 +42,7 @@ const Navbar = (props: Props) => {
           </li>
           <div className="flex">
             <li className="flex bg-transparent">
-              {[...locales].sort().map((locale) => (
+              {[...locales!].sort().map((locale) => (
                 locale === 'en' ? <><Link key={locale} href="/" className="w-[70px] h-[40px] bg-transparent overflow-y-hidden mr-[2rem]" locale={locale}><Image src={en} width={80} height={30} alt="" /></Link></> : 
                 <><Link key={locale} href="/" className="w-[70px] h-[40px] bg-transparent overflow-y-hidden"  locale={locale}><Image src={rs} width={80} height={25} alt=""  /></Link></>
               ))}
@@ -74,9 +76,9 @@ const Navbar = (props: Props) => {
             </li>
             <div className="flex">
             <li className="flex bg-transparent">
-              {[...locales].sort().map((locale) => (
-                locale === 'en' ? <><Link key={locale} href="/" className="w-[70px] h-[40px] bg-transparent overflow-y-hidden mr-[2rem]" locale={locale}><Image src={en} width={80} height={30}  /></Link></> : 
-                <><Link key={locale} href="/" className="w-[70px] h-[40px] bg-transparent overflow-y-hidden"  locale={locale}><Image src={rs} width={80} height={25}  /></Link></>
+              {[...locales!].sort().map((locale) => (
+                locale === 'en' ? <><Link key={locale} href="/" className="w-[70px] h-[40px] bg-transparent overflow-y-hidden mr-[2rem]" locale={locale}><Image src={en} width={80} height={30} alt="" /></Link></> : 
+                <><Link key={locale} href="/" className="w-[70px] h-[40px] bg-transparent overflow-y-hidden"  locale={locale}><Image src={rs} width={80} height={25} alt="" /></Link></>
               ))}
             </li>
           </div>

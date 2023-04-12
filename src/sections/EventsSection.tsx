@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 import EvenCard from "@/components/EventCard";
 import { FormattedMessage } from "react-intl";
 
@@ -8,9 +6,11 @@ import eventImg1 from "../../public/images/event1.jpeg";
 import eventImg2 from "../../public/images/event2.jpeg";
 import eventImg3 from "../../public/images/event3.jpeg";
 
-type Props = {};
+type Props = {
+};
 
-const Section4 = (props: Props) => {
+const Section4 = () => {
+
   const event1 = {
     src: eventImg1,
     alt: "The blooming of a lotus event",
@@ -23,7 +23,7 @@ const Section4 = (props: Props) => {
     alt: "Sound healing with Peter Hess event",
     name: "SOUND HEALING WITH PETER HESS",
     date: "26 - 28 Maj",
-    description: <FormattedMessage id="page.home.event.one" />,
+    // description: <FormattedMessage id="page.home.event.one" />,
   };
   const event3 = {
     src: eventImg3,

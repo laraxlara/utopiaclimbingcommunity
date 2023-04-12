@@ -1,13 +1,14 @@
 import React from "react";
 import Image from "next/image";
+import type { ImageLoaderProps } from 'next/image';
 import { MdOutlineKingBed, MdOutlineSingleBed } from "react-icons/md";
 
 type Props = {
-  src: string;
+  src: any;
   alt: string;
   name: string;
   date: number | string;
-  description: string;
+  description: React.ReactNode;
 };
 
 const Card = ({ src, alt, name, date, description }: Props) => {

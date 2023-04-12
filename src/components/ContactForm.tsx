@@ -21,7 +21,7 @@ type State = {
   state: string;
 };
 
-function ContactForm({}: Props) {
+function ContactForm() {
   const { locales } = useRouter();
 
   const intl = useIntl();
@@ -110,14 +110,14 @@ function ContactForm({}: Props) {
           <label className="block mb-2 text-[2rem] text-gray-900 dark:text-gray-400">
             Message
           </label>
-          <textarea
+          {/* <textarea
             id="message"
             value={values.message}
             onChange={handleChange}
             rows={6}
             className="block p-2.5 w-full text-[2rem] text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 dark:bg-[#18181b] dark:border-gray-600 dark:placeholder-gray-600 dark:text-white"
             placeholder="Leave a message..."
-          ></textarea>
+          ></textarea> */}
         </div>
         {/* {form.state === 'loading' ? (
 				<div>Sending....</div>
