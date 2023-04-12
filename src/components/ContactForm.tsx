@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-misused-promises */
+
 import React, { useState } from "react";
 import * as yup from "yup";
 import { FormattedMessage } from "react-intl";
@@ -31,9 +33,9 @@ function ContactForm() {
     // });
   };
 
-  const onSubmitForm = async (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmitForm = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    await console.log(values);
+    console.log(values);
     setValues(values)
 
     // if (values.email && values.subject && values.message) {
