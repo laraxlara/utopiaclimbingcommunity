@@ -6,22 +6,16 @@ import { FormattedMessage } from "react-intl";
 
 const Section2 = () => {
   return (
-    <section className="section w-[100%] h-[100%] xl:h-[100vh] bg-black relative flex justify-center items-center">
-      <div className="max-w-screen-xl my-0 px-6 mx-auto flex flex-col-reverse xl:flex-row justify-center items-center text-start sm:text-center">
-        <div className="w-full h-full xl:w-[40%] overflow-y-hidden">
-          <div className="relative xl:absolute top-0 left-0">
-            <Image
-              src={img2}
-              alt=""
-              style={{ width: "100%", height: "100vh" }}
-            />
-          </div>
+    <section className="relative w-full h-[100%] xl:h-[100vh] bg-black">
+      <div className="relative xl:absolute w-full h-[100%] xl:h-[100vh] top-0 left-0 bottom-0 right-0 flex flex-col xl:flex-row">
+        <div className="relative w-full xl:w-[40%] text-white overflow-y-hidden flex justify-center items-center">
+          <Image src={img2} alt="" />
         </div>
-        <div className="w-full xl:w-[60%]">
-          <h2 className="text-[6.7rem]">
+        <div className="relative w-full xl:w-[60%] h-[100%] xl:h-[100vh] text-white flex flex-col justify-center items-center text-center overflow-y-hidden">
+          <h3 className="overflow-y-hidden">
             <FormattedMessage id="page.home.h2" />
-          </h2>
-          <p className="text-start px-8 py-4">
+          </h3>
+          <p className="text-start px-12 overflow-y-hidden">
             <FormattedMessage id="page.home.section2.p" />
           </p>
         </div>

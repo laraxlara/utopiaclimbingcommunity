@@ -41,8 +41,8 @@ const Navbar = () => {
           <div className="flex">
             <li className="flex bg-transparent">
               {[...locales!].sort().map((locale) => (
-                locale === 'en' ? <><Link key={locale} href="/" className="w-[70px] h-[40px] bg-transparent overflow-y-hidden mr-[2rem]" locale={locale}><Image src={en} width={80} height={30} alt="" /></Link></> : 
-                <><Link key={locale} href="/" className="w-[70px] h-[40px] bg-transparent overflow-y-hidden"  locale={locale}><Image src={rs} width={80} height={25} alt=""  /></Link></>
+                locale === 'en' ? <><Link key={locale} href="/" className="w-[35px] h-[40px] bg-transparent overflow-y-hidden mr-[2rem]" locale={locale}><Image src={en} width={80} height={30} alt="" /></Link></> : 
+                <><Link key={locale} href="/" className="w-[35px] h-[40px] bg-transparent overflow-y-hidden"  locale={locale}><Image src={rs} width={80} height={25} alt=""  /></Link></>
               ))}
             </li>
           </div>
@@ -73,10 +73,10 @@ const Navbar = () => {
               </Link>
             </li>
             <div className="flex">
-            <li className="flex bg-transparent">
+            <li className="flex bg-transparent hover:bg-transparent">
               {[...locales!].sort().map((locale) => (
-                locale === 'en' ? <><Link key={locale} href="/" className="w-[70px] h-[40px] bg-transparent overflow-y-hidden mr-[2rem]" locale={locale}><Image src={en} width={80} height={30} alt="" /></Link></> : 
-                <><Link key={locale} href="/" className="w-[70px] h-[40px] bg-transparent overflow-y-hidden"  locale={locale}><Image src={rs} width={80} height={25} alt="" /></Link></>
+                locale === 'en' ? <><Link key={locale} href="/" className="w-[37px] xl:w-[37px] h-[20px] xl:h-[8px] bg-transparent overflow-y-hidden mr-[2rem]" locale={locale}><Image src={en} width={37} height={8} alt="" /></Link></> : 
+                <><Link key={locale} href="/" className="w-[37px] xl:w-[37px] h-[20px] xl:h-[8px] bg-transparent overflow-y-hidden"  locale={locale}><Image src={rs} width={37} height={8} alt="" /></Link></>
               ))}
             </li>
           </div>

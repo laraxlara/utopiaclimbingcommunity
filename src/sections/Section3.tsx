@@ -12,7 +12,7 @@ const Section3 = () => {
     >
       <div className="max-w-screen-xl my-0 mx-auto px-6 flex flex-col sm:flex-row justify-center items-center">
         <div className="w-full sm:w-[50%] text-start sm:text-center">
-          <h3 className="text-[4rem] xl:[8rem]">
+          <h3 className="text-[4.5rem] xl:text-[6.7rem] px-6">
             <FormattedMessage id="page.home.section3.h" />
           </h3>
           <p className="text-start">

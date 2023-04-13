@@ -17,7 +17,7 @@ const Section7 = () => {
           </p>
         </div>
         <div className="w-full sm:w-[40%] m-auto flex justify-center items-center">
-          <Image src={img6} width={600} alt="" />
+          <Image src={img6} alt="" />
         </div>
       </div>
     </section>

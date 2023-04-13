@@ -26,7 +26,7 @@ const Section4 = () => {
     src: eventImg3,
     alt: "Utopia Forest Party event",
     name: "UTOPIA FOREST PARTY",
-    date: "U PRIPREMI",
+    date: <FormattedMessage id="page.home.event.date" />,
     description: "",
   };
 

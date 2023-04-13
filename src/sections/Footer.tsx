@@ -15,13 +15,13 @@ function Footer() {
           <h3 className="overflow-y-hidden"><FormattedMessage id="page.home.footer.h" /></h3>
           <div className="flex text-white text-[4rem] justify-start items-center overflow-y-hidden">
             <AiFillInstagram />
-            <a href="/" className="text-[2.3rem] ml-[2rem]">
+            <a href="https://www.instagram.com/utopia_climbing__community/" target="blank" className="text-[2.3rem] ml-[2rem]">
               instagram
             </a>
           </div>
           <div className="flex text-white text-[4rem] justify-start items-center overflow-y-hidden">
             <AiFillFacebook />
-            <a href="/" className="text-[2.3rem] ml-[2rem]">
+            <a href="https://www.facebook.com/profile.php?id=100084301151119" target="blank" className="text-[2.3rem] ml-[2rem]">
               facebook
             </a>
           </div>
@@ -33,8 +33,9 @@ function Footer() {
         </div>
       </div>
       <div className="w-full h-[100px] flex justify-center items-center">
-        <div className="absolute bottom-10 flex justify-center items-center text-center text-white">
+        <div className="absolute bottom-10 flex flex-col justify-center items-center text-center text-white">
           <p>2023 © Utopia Climbing Center. All rights reserved.</p>
+          {/* <a href="/" target="blank">L</a> */}
         </div>
       </div>
     </section>

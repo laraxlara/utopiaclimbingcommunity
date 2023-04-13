@@ -71,7 +71,7 @@ function ContactForm() {
       <form onSubmit={(e) => onSubmitForm(e)} className="space-y-8">
         <div>
           <label className="block mb-2 text-[2rem] text-gray-700 dark:text-gray-300">
-            Email
+            <FormattedMessage id="page.home.contact.e" />
           </label>
           <input
             type="email"
@@ -85,7 +85,7 @@ function ContactForm() {
         </div>
         <div>
           <label className="block mb-2 text-[2rem] text-gray-900 dark:text-gray-300">
-            Subject
+            <FormattedMessage id="page.home.contact.s" />
           </label>
           <input
             type="text"
@@ -99,7 +99,7 @@ function ContactForm() {
         </div>
         <div className="sm:col-span-2">
           <label className="block mb-2 text-[2rem] text-gray-900 dark:text-gray-400">
-            Message
+            <FormattedMessage id="page.home.contact.m" />
           </label>
           {/* <textarea
             id="message"
@@ -121,7 +121,7 @@ function ContactForm() {
           type="submit"
           className="py-3 px-5 text-[1.8rem] text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-[#052e16] dark:hover:bg-primary-700 dark:focus:ring-primary-800"
         >
-          Send message
+          <FormattedMessage id="page.home.contact.b" />
         </button>
       </form>
     </>

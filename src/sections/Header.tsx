@@ -14,7 +14,7 @@ const Header = () => {
         <Image src={headerImage} alt="" fill priority />
       </div>
       <Navbar />
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mt-0 xl:mt-[10rem]">
         <Image src={logo} alt="Logo" width={400} height={400} />
       </div>
     </div>

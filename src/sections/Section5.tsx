@@ -9,7 +9,7 @@ function Section5() {
   return (
     <section className="section w-full h-[100%] xl:h-[100vh] bg-black flex justify-center items-center">
       <div className="max-w-screen-xl my-0 mx-auto px-6 flex flex-col justify-center items-center">
-        <h3 className="text-[5rem]">
+        <h3 className="text-[4.5rem] xl:text-[6.7rem] px-6 text-center">
           <FormattedMessage id="page.home.section5.h" />
         </h3>
         <div className="flex flex-wrap gap-10 justify-center items-center">

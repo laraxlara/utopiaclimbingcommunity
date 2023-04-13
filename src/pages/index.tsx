@@ -35,7 +35,6 @@ export default function Home() {
           <Section3 />
           <Section4 />
           <Section5 />
-          <Section6 />
           <Section7 />
           <Section8 />
           <Section9 />
@@ -43,6 +42,7 @@ export default function Home() {
           <SectionPool />
           <EventsSection />
           <Section11 />
+          <Section6 />
           <Footer />
         </div>
       </main>

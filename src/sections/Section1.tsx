@@ -7,8 +7,8 @@ const Section1 = () => {
   return (
     <section className="section w-[100%] h-[100%] xl:h-[100vh] bg-black flex justify-center items-center">
       <div className="max-w-screen-xl my-0 px-6 py-10 xl:py-0 mx-auto flex flex-col sm:flex-row justify-center items-center">
-        <div className="w-full sm:w-[60%] pl-2">
-          <h1 className="text-[4rem] xl:text-[8rem]">
+        <div className="w-full sm:w-[60%] pl-2 mb-4 xl:mb-0">
+          <h1 className="text-[6rem] xl:text-[8rem]">
             <FormattedMessage id="page.home.h1" />
           </h1>
           <p>

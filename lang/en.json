@@ -1,5 +1,4 @@
 {
-    "page.home.head.title": "Next.js i18n example",
     "page.home.navbar.link.activities": "Activities",
     "page.home.navbar.link.accomodation": "Accomodation",
     "page.home.navbar.link.events": "Events",
@@ -36,5 +35,13 @@
     "page.home.event.one": "@katalina_ioga runs a special body, mind and soul detoxification program in Utopia. Together with @kokosbijustrav, we offer healthy food and total detoxification to cleanse the body and mind. Join a group for healing and transformation. Contact us for more information.",
     "page.home.event.two": "We organize a Sound Healing Weekend with the only licensed Peter Hess instructor in Serbia. This type of sound bath meditation helps release blockages and negative energy. Join us under the starry sky and de-stress. Contact us for more information.",
     "page.home.event.h": "EVENTS",
-    "page.home.footer.h": "Contact"
+    "page.home.event.date": "SOON",
+    "page.home.footer.h": "Contact",
+    "page.home.contact.e": "Email",
+    "page.home.contact.s": "Subject",
+    "page.home.contact.m": "Message",
+    "page.home.contact.ep": "example@gmail.com",
+    "page.home.contact.sp": "Enter the subject",
+    "page.home.contact.mp": "How can we help you?",
+    "page.home.contact.b": "Send message"
   }
