@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FormattedMessage } from "react-intl";
-import img8 from "../../public/images/54.jpg";
+import img8 from "../../public/images/54.png";
 
 
 const Section9 = () => {
