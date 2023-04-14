@@ -1,7 +1,6 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import { MdOutlineKingBed } from "react-icons/md";
-import roomImg1 from "../../public/images/room1.jpeg";
 
 type Props = {
   src: string | StaticImageData;

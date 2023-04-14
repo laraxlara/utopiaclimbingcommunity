@@ -1,4 +1,4 @@
-/* eslint-disable  @typescript-eslint/no-misused-promises */
+/* eslint-disable  @typescript-eslint/no-unsafe-assignment */
 
 import React, { useState } from "react";
 import * as yup from "yup";
@@ -14,7 +14,6 @@ type Values = yup.InferType<typeof valuesSchema>;
 
 function ContactForm() {
   const [sent, setSent] = useState(false)
-  const [error, setError] = useState(false)
   const [values, setValues] = useState<Values>({
     email: "",
     subject: "",
@@ -52,8 +51,7 @@ function ContactForm() {
           return;
         }
       } catch (error) {
-        console.log(error);
-        setError(true)       
+        console.log(error);  
       }
     }
   };
