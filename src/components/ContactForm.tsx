@@ -1,4 +1,5 @@
 /* eslint-disable  @typescript-eslint/no-misused-promises */
+/* eslint-disable  @typescript-eslint/no-unsafe-assignment */
 
 import React, { useState } from "react";
 import * as yup from "yup";
