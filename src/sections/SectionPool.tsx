@@ -7,9 +7,11 @@ const SectionPool = () => {
   return (
     <div className="section relative w-[100%] h-[400px] xl:h-[100vh] flex justify-center items-center">
       <div className="absolute w-[100%] h-[100%] top-0 z-[-1]">
-        <Image src={imgbg} alt="" fill priority />
+        <Image src={imgbg} alt="A beautiful lake surrounded by nature" fill priority />
       </div>
-      <h3><FormattedMessage id="page.home.pool.h" /></h3>
+      <h3>
+        <FormattedMessage id="page.home.pool.h" />
+      </h3>
     </div>
   );
 };

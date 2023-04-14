@@ -2,28 +2,28 @@ import React from "react";
 import Card from "@/components/Card";
 import { FormattedMessage } from "react-intl";
 
-// import roomImg1 from "../../public/images/room1.jpeg";
-// import roomImg2 from "../../public/images/room2.jpg";
-// import roomImg3 from "../../public/images/room3.jpeg";
+import roomImg1 from "../../public/images/room1.jpeg";
+import roomImg2 from "../../public/images/room2.jpg";
+import roomImg3 from "../../public/images/room3.jpeg";
 
 const Section4 = () => {
   const room1 = {
-    // src: roomImg1,
-    alt: "Single bed & Double bed room",
+    src: roomImg1,
+    alt: "Rustic cozy single and double bedroom",
     name: <FormattedMessage id="page.home.room.one" />,
     description2: <FormattedMessage id="page.home.room.one.desc" />,
     description1: <FormattedMessage id="page.home.room.two.desc" />,
   };
   const room2 = {
-    // src: roomImg2,
-    alt: "Three bed room",
+    src: roomImg2,
+    alt: "Rustic cozy three bed room",
     name: <FormattedMessage id="page.home.room.three" />,
     description1: <FormattedMessage id="page.home.room.three.desc" />,
     description2: undefined,
   };
   const room3 = {
-    // src: roomImg3,
-    alt: "Four bed room",
+    src: roomImg3,
+    alt: "Rustic cozy four bed room",
     name: <FormattedMessage id="page.home.room.four" />,
     description1: <FormattedMessage id="page.home.room.four.desc" />,
     description2: undefined,

@@ -13,9 +13,9 @@ function Section5() {
           <FormattedMessage id="page.home.section5.h" />
         </h3>
         <div className="flex flex-wrap gap-10 justify-center items-center">
-          <Image src={img51} alt="" width={350} height={300} />
-          <Image src={img52} alt="" width={350} height={300} />
-          <Image src={img53} alt="" width={350} height={300} />
+          <Image src={img51} alt="Rustic wood fireplace with the blue lantern glass door candle holder" width={350} height={300} />
+          <Image src={img52} alt="Shared living room with leather armchair and wooden table" width={350} height={300} />
+          <Image src={img53} alt="Dining room with calming blue walls for socializing" width={350} height={300} />
         </div>
       </div>
     </section>

@@ -14,7 +14,7 @@ const Section6 = () => {
           <ContactForm />
         </div>
         <div className="max-w-3xl">
-          <Image src={footerImg} alt="" />
+          <Image src={footerImg} alt="Man resting on the deck surrounded by the woods" />
         </div>
       </div>
     </section>

@@ -11,19 +11,19 @@ const Section3 = () => {
       className="section w-[100%] h-[100%] xl:h-[100vh] bg-black flex justify-center items-center"
     >
       <div className="max-w-screen-xl my-0 mx-auto px-6 flex flex-col sm:flex-row justify-center items-center">
-        <div className="w-full sm:w-[50%] text-start sm:text-center">
-          <h3 className="text-[4.5rem] xl:text-[6.7rem] px-6">
+        <div className="w-full xl:w-[55%] text-center text-center px-0 xl:px-[5rem]">
+          <h3 className="text-[4.5rem] xl:text-[6.7rem]">
             <FormattedMessage id="page.home.section3.h" />
           </h3>
-          <p className="text-start">
+          <p>
             <FormattedMessage id="page.home.section3.p" />
           </p>
           <div className="text-white text-[5rem] flex justify-center items-center mt-[3rem]">
             <AiOutlineArrowDown />
           </div>
         </div>
-        <div className="w-full sm:w-[50%] m-auto">
-          <Image src={img3} width={650} alt="" />
+        <div className="w-full xl:w-[45%] m-auto">
+          <Image src={img3} width={600} alt="" />
         </div>
       </div>
     </section>
