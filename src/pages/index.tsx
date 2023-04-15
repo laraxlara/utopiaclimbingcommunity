@@ -24,8 +24,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/logo.png" />
 
-        <link rel="alternate" href="http://localhost:3000" hrefLang="en" />
-        <link rel="alternate" href="http://localhost:3000/sr" hrefLang="sr" />
+        <link rel="alternate" href="http://localhost:3000" hrefLang="sr" />
+        <link rel="alternate" href="http://localhost:3000/en" hrefLang="en" />
       </Head>
       <main>
         <div className="content-wrapper">
