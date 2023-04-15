@@ -15,7 +15,7 @@ const Section10 = () => {
            <h3>
              <FormattedMessage id="page.home.section10.h" />
           </h3>
-          <p className="text-center px-12">
+          <p className="text-center px-8">
             <FormattedMessage id="page.home.section10.p" />
           </p>
           <div className="flex text-white justify-center items-center text-center text-[2.7rem] gap-6 pt-10">

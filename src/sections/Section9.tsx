@@ -8,7 +8,7 @@ const Section9 = () => {
   return (
     <section className="relative w-full h-[100%] xl:h-[100vh] bg-black">
       <div className="relative xl:absolute w-full h-[100%] xl:h-[100vh] top-0 left-0 bottom-0 right-0 flex flex-col xl:flex-row">
-        <div className="w-full xl:w-[60%] flex flex-col justify-center items-center px-0 xl:px-[10rem]">
+        <div className="w-full xl:w-[60%] flex flex-col justify-center items-center px-0 xl:px-[10rem] mb-10 xl:mb-0">
           <h3>
             <FormattedMessage id="page.home.section9.h" />
           </h3>

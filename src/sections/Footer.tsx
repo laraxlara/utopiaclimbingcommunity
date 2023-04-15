@@ -12,7 +12,9 @@ function Footer() {
     <section className="section h-[100%] bg-black relative">
       <div className="max-w-screen-xl my-0 mx-auto px-4 flex flex-col items-center justify-between md:flex-row text-start overflow-y-hidden">
         <div className="h-[100%] flex flex-col gap-6 overflow-y-hidden">
-          <h3 className="overflow-y-hidden"><FormattedMessage id="page.home.footer.h" /></h3>
+          <h3 className="overflow-y-hidden text-center xl:text-start">
+            <FormattedMessage id="page.home.footer.h" />
+          </h3>
           <div className="flex text-white text-[4rem] justify-start items-center overflow-y-hidden">
             <AiFillInstagram />
             <a href="https://www.instagram.com/utopia_climbing__community/" target="blank" className="text-[2.3rem] ml-[2rem]">
@@ -35,7 +37,6 @@ function Footer() {
       <div className="w-full h-[100px] flex justify-center items-center">
         <div className="absolute bottom-10 flex flex-col justify-center items-center text-center text-white">
           <p>2023 © Utopia Climbing Center. All rights reserved.</p>
-          {/* <a href="/" target="blank">L</a> */}
         </div>
       </div>
     </section>

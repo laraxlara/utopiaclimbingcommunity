@@ -38,14 +38,14 @@ const Navbar = () => {
               <FormattedMessage id="page.home.navbar.link.contact" />
             </Link>
           </li>
-          <div className="flex">
-            <li className="flex bg-transparent">
+          <li className="flex">
+            <div className="flex bg-transparent">
               {[...locales!].sort().map((locale) => (
                 locale === 'en' ? <><Link key={locale} href="/" className="w-[35px] h-[40px] bg-transparent overflow-y-hidden mr-[2rem]" locale={locale}><Image src={en} width={80} height={30} alt="" /></Link></> : 
                 <><Link key={locale} href="/" className="w-[35px] h-[40px] bg-transparent overflow-y-hidden"  locale={locale}><Image src={rs} width={80} height={25} alt=""  /></Link></>
               ))}
-            </li>
-          </div>
+            </div>
+          </li>
         </ul>
         <div className="text-white text-[4rem] flex sm:hidden justify-between z-10 relative font-light" onClick={()=>setIsOpen(!isOpen)} ><div></div>{isOpen ? <AiOutlineClose />:<CiMenuFries />}</div>
       </nav>

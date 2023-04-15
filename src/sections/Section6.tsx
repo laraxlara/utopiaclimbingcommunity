@@ -10,7 +10,7 @@ const Section6 = () => {
       className="section w-full h-[100%] xl:h-[100vh] bg-black flex justify-center items-center"
     >
       <div className="max-w-screen-xl my-0 mx-auto py-8 lg:py-16 px-4 max-w-screen-md flex flex-col xl:flex-row justify-between items-center gap-10">
-        <div className="max-w-4xl">
+        <div className="max-w-4xl mb-10 xl:mb-0">
           <ContactForm />
         </div>
         <div className="max-w-3xl">
