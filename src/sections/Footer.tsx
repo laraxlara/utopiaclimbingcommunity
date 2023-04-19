@@ -9,7 +9,7 @@ import footerImg from "../../public/images/logo_white.png";
 
 function Footer() {
   return (
-    <section className="section h-[100%] bg-black relative">
+    <footer className="section h-[100%] bg-black relative">
       <div className="max-w-screen-xl my-0 mx-auto px-4 flex flex-col items-center justify-between md:flex-row text-start overflow-y-hidden">
         <div className="h-[100%] flex flex-col gap-6 overflow-y-hidden">
           <h3 className="overflow-y-hidden text-center xl:text-start">
@@ -39,7 +39,7 @@ function Footer() {
           <p>2023 © Utopia Climbing Center. All rights reserved.</p>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }
 
