@@ -36,7 +36,7 @@ const Section4 = () => {
       className="section w-[100%] h-[100%] xl:h-[100vh] bg-black flex justify-center items-center"
     >
       <div className="max-w-screen-xl my-0 mx-auto flex flex-col justify-center items-center">
-        <h3>
+        <h3 className="text-[4rem] xl:text-[6rem]">
           <FormattedMessage id="page.home.event.h" />
         </h3>
         <div className="flex flex-col xl:flex-row gap-12">

@@ -11,8 +11,8 @@ const Section3 = () => {
       className="section w-[100%] h-[100%] xl:h-[100vh] bg-black flex justify-center items-center"
     >
       <div className="max-w-screen-xl my-0 mx-auto px-6 flex flex-col sm:flex-row justify-center items-center">
-        <div className="w-full xl:w-[55%] text-center text-center px-0 xl:px-[5rem] mb-10 xl:mb-0">
-          <h3 className="text-[4.5rem] xl:text-[6.7rem]">
+        <div className="w-full xl:w-[60%] text-center text-center px-0 xl:px-[5rem] mb-10 xl:mb-0">
+          <h3 className="text-[4rem] xl:text-[6rem]">
             <FormattedMessage id="page.home.section3.h" />
           </h3>
           <p>
@@ -22,7 +22,7 @@ const Section3 = () => {
             <AiOutlineArrowDown />
           </div>
         </div>
-        <div className="w-full xl:w-[45%] m-auto">
+        <div className="w-full xl:w-[40%] m-auto ml-12 xl:ml-0">
           <Image src={img3} width={600} alt="" />
         </div>
       </div>

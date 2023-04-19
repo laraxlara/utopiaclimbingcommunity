@@ -9,7 +9,7 @@ const SectionPool = () => {
       <div className="absolute w-[100%] h-[100%] top-0 z-[-1]">
         <Image src={imgbg} alt="A beautiful lake surrounded by nature" fill priority />
       </div>
-      <h3 className="text-center">
+      <h3 className="text-center text-[4rem] xl:text-[6rem]">
         <FormattedMessage id="page.home.pool.h" />
       </h3>
     </div>
