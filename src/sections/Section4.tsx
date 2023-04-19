@@ -30,8 +30,8 @@ const Section4 = () => {
   };
 
   return (
-    <section className="section w-[100%] h-[100%] xl:h-[100vh] bg-black flex justify-center items-center">
-      <div className="max-w-screen-xl my-0 mx-auto flex flex-col justify-center items-center">
+    <section className="section w-[100%] h-[100%] xl:h-[100vh] bg-black flex justify-center items-center overflow-y-hidden">
+      <div className="max-w-screen-xl my-0 mx-auto flex flex-col justify-center items-center overflow-y-hidden">
         <h3 className="text-[4rem] sm:text-[4rem] xl:text-[6rem] px-6">
           <FormattedMessage id="page.home.room.h" />
         </h3>
