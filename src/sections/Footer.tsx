@@ -36,7 +36,7 @@ function Footer() {
       </div>
       <div className="w-full h-[100px] flex justify-center items-center">
         <div className="absolute bottom-10 flex flex-col justify-center items-center text-center text-white">
-          <p>2023 © Utopia Climbing Center. All rights reserved.</p>
+          <p>2023 © Utopia Climbing Community. All rights reserved.</p>
         </div>
       </div>
     </footer>
