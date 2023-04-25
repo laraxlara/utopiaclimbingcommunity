@@ -33,7 +33,7 @@ const Section4 = () => {
   return (
     <section
       id="events-section"
-      className="section w-[100%] h-[100%] xl:h-[100vh] bg-black flex justify-center items-center overflow-y-hidden"
+      className="section w-[100%] h-[100%] LG:h-[100vh] bg-black flex justify-center items-center overflow-y-hidden"
     >
       <div className="max-w-screen-xl my-0 mx-auto flex flex-col justify-center items-center">
         <h3 className="text-[4rem] xl:text-[6rem]">
