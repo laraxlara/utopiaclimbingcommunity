@@ -30,7 +30,7 @@ function Footer() {
         </div>
         <div className="h-[100%]">
           <div className="w-full flex justify-center items-center overflow-y-hidden">
-            <Image src={footerImg} width={300} alt="" />
+            <Image src={footerImg} width={300} alt="Logo" />
           </div>
         </div>
       </div>
