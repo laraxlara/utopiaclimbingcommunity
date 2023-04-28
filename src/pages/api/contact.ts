@@ -35,7 +35,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<Response>) => {
     }
 
     await transporter.sendMail({
-      to: "laraxlara97@gmail.com",
+      to: "utopia.climbingcommunity@gmail.com",
       from: `${email}`,
       replyTo: email,
       subject: `${subject}`,

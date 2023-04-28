@@ -15,6 +15,7 @@ type Values = yup.InferType<typeof valuesSchema>;
 
 function ContactForm() {
   const [sent, setSent] = useState(false)
+  const [error, setError] = useState(false)
   const [values, setValues] = useState<Values>({
     email: "",
     subject: "",
@@ -22,7 +23,6 @@ function ContactForm() {
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLElement>) => {
-    console.log(e)
     setValues({
       ...values,
       [(e.target as HTMLInputElement).id]: (e.target as HTMLInputElement).value,
@@ -36,7 +36,7 @@ function ContactForm() {
 
     if (values.email && values.subject && values.message) {
       try {
-        const res = await fetch(`api/contact`, {
+        const res = await fetch(`api/contact/`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -44,15 +44,17 @@ function ContactForm() {
           body: JSON.stringify(values),
         });
 
+        if (res) {
+          setSent(true)
+        }
         const { data } = await res.json();
 
         if (data) {
-          console.log(data);
-          setSent(true)
           return;
         }
       } catch (error) {
-        console.log(error);  
+        console.log(error); 
+        setError(true)
       }
     }
   };
@@ -65,8 +67,7 @@ function ContactForm() {
       <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-md">
         <FormattedMessage id="page.home.contact.p" />
       </p>
-
-      {!sent ? <>
+      {sent ? <div className="text-white text-[2rem] text-[#42ba96] py-2">Your message has been sent!</div> : <div className="text-white text-[2rem] text-[#7676a7] py-2">{error}</div>}
         <form onSubmit={(e) => onSubmitForm(e)} className="space-y-8">
         <div>
           <label className="block mb-2 text-[2rem] text-gray-700 dark:text-gray-300">
@@ -116,10 +117,7 @@ function ContactForm() {
           <FormattedMessage id="page.home.contact.b" />
         </button>
       </form>
-      </> : <div>
-        <h4 className="text-white flex justify-center items-center text-center text-[3.6rem] text-[green]">Your message has been sent!</h4>
-      </div>}    
-    </>
+      </>   
   );
 }
 
