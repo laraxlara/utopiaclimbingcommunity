@@ -13,14 +13,14 @@ const Section4 = () => {
     alt: "The blooming of a lotus event",
     name: "THE BLOOMING OF A LOTUS",
     date: "19 - 21 Maj",
-    description: <FormattedMessage id="page.home.event.two" />,
+    description: <FormattedMessage id="page.home.event.one" />,
   };
   const event2 = {
     src: eventImg2,
     alt: "Sound healing with Peter Hess event",
     name: "SOUND HEALING WITH PETER HESS",
     date: "26 - 28 Maj",
-    description: <FormattedMessage id="page.home.event.one" />,
+    description: <FormattedMessage id="page.home.event.two" />,
   };
   const event3 = {
     src: eventImg3,
