@@ -1,6 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
 import { transporter } from "../../config/nodemailer";
+import logo from "../../../public/images/logo.png";
 
 type Data = {
   email: string;
@@ -35,12 +36,31 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<Response>) => {
     }
 
     await transporter.sendMail({
-      to: "utopia.climbingcommunity@gmail.com",
+      sender: `Utopia Website ${email}`,
+      to: "laraxlara97@gmail.com",
       from: `${email}`,
       replyTo: email,
-      subject: `${subject}`,
+      subject: `Utopia Climbing Community: ${subject}`,
       text: message,
-      html: `<p>${message}</p>`,
+      html: `
+      <div style="width: 100%; background-color: #f3f9ff; padding: 5rem 0">
+      <div style="max-width: 700px; background-color: white; margin: 0 auto">
+        <div style="width: 100%; background-color: #00efbc; padding: 20px 0">
+        
+        </div>
+        <div style="width: 100%; gap: 10px; padding: 30px 0; display: grid">
+          <p style="font-weight: 800; font-size: 1.2rem; padding: 0 30px">
+            Utopia Climbing Community - Contact Form
+          </p>
+          <div style="font-size: .8rem; margin: 0 30px">
+          <p>Subject: <b>${subject}</b></p>
+            <p>Email: <b>${email}</b></p>
+            <p>Message: <i>${message}</i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+      `,
     });
 
     res.status(200).send({ status: "done", message: "message has been sent" });
