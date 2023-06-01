@@ -5,6 +5,8 @@ import React, { useState } from "react";
 import * as yup from "yup";
 import { FormattedMessage } from "react-intl";
 
+import Loading from "./Loading";
+
 const valuesSchema = yup.object({
   email: yup.string(),
   subject: yup.string(),
@@ -16,6 +18,7 @@ type Values = yup.InferType<typeof valuesSchema>;
 function ContactForm() {
   const [sent, setSent] = useState(false);
   const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [values, setValues] = useState<Values>({
     email: "",
     subject: "",
@@ -33,6 +36,7 @@ function ContactForm() {
     e.preventDefault();
     console.log(values);
     setValues(values);
+    setLoading(true);
 
     if (values.email && values.subject && values.message) {
       try {
@@ -46,6 +50,7 @@ function ContactForm() {
 
         if (res) {
           setSent(true);
+          setLoading(false);
         }
         const { data } = await res.json();
 
@@ -60,7 +65,7 @@ function ContactForm() {
   };
 
   return (
-    <>
+    <div className="flex flex-col">
       <h2 className="mb-4 text-6xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
         <FormattedMessage id="page.home.contact.h" />
       </h2>
@@ -74,7 +79,11 @@ function ContactForm() {
         </p>
       ) : null}
 
-      {sent && !error ? (
+      {loading ? (
+        <>
+          <Loading />
+        </>
+      ) : sent && !error && !loading ? (
         <>
           <p className="text-[green] text-7xl text-center font-bold py-6">
             Your message has been sent!
@@ -134,7 +143,7 @@ function ContactForm() {
           </form>
         </>
       )}
-    </>
+    </div>
   );
 }
 
