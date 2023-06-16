@@ -2,38 +2,37 @@ import React from "react";
 import EvenCard from "@/components/EventCard";
 import { FormattedMessage } from "react-intl";
 
-import eventImg1 from "../../public/images/event1.jpeg";
-import eventImg2 from "../../public/images/event2.jpeg";
-import eventImg3 from "../../public/images/event3.jpeg";
+import eventImg1 from "../../public/images/e1.jpg";
+import eventImg2 from "../../public/images/e2.jpg";
+import eventImg3 from "../../public/images/e3.jpg";
 
 const Section4 = () => {
-
   const event1 = {
     src: eventImg1,
-    alt: "The blooming of a lotus event",
-    name: "THE BLOOMING OF A LOTUS",
-    date: "19 - 21 Maj",
+    alt: "Utopia",
+    name: "U RITMU PRIRODE",
+    date: <FormattedMessage id="page.home.event.date.one" />,
     description: <FormattedMessage id="page.home.event.one" />,
   };
   const event2 = {
     src: eventImg2,
-    alt: "Sound healing with Peter Hess event",
-    name: "SOUND HEALING WITH PETER HESS",
-    date: "26 - 28 Maj",
+    alt: "Hata Yin Flow",
+    name: "Hata Yin Flow - Yoga retreat",
+    date: <FormattedMessage id="page.home.event.date.two" />,
     description: <FormattedMessage id="page.home.event.two" />,
   };
   const event3 = {
     src: eventImg3,
-    alt: "Utopia Forest Party event",
-    name: "UTOPIA FOREST PARTY",
-    date: <FormattedMessage id="page.home.event.date" />,
-    description: "",
+    alt: "Yoga Retreat",
+    name: "VIDIM TE - Yoga Retreat",
+    date: <FormattedMessage id="page.home.event.date.three" />,
+    description: <FormattedMessage id="page.home.event.three" />,
   };
 
   return (
     <section
       id="events-section"
-      className="section w-[100%] h-[100%] xl:h-[100vh] bg-black flex justify-center items-center overflow-y-hidden"
+      className="section max-w-screen-2xl xl:h-full bg-black flex justify-center items-center overflow-y-hidden"
     >
       <div className="max-w-screen-xl my-0 mx-auto flex flex-col justify-center items-center">
         <h3 className="text-[4rem] xl:text-[6rem]">
