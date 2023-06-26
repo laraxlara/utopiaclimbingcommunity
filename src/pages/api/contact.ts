@@ -1,9 +1,10 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
 import { transporter } from "../../config/nodemailer";
-import logo from "../../../public/images/logo.png";
 
 type Data = {
+  name: string;
+  surname: string;
   email: string;
   subject: string;
   message: string;
@@ -16,7 +17,7 @@ type Response = {
 };
 
 const handler = async (req: NextApiRequest, res: NextApiResponse<Response>) => {
-  const { email, subject, message } = req.body as Data;
+  const { name, surname, email, subject, message } = req.body as Data;
 
   if (req.method !== "POST") {
     return res.status(404).send({ status: "fail", error: "Begone." });
@@ -52,6 +53,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<Response>) => {
             Utopia Climbing Community - Contact Form
           </p>
           <div style="font-size: .8rem; margin: 0 30px">
+          <p>Name: <b>${name}</b></p>
+          <p>Surname: <b>${surname}</b></p>
           <p>Subject: <b>${subject}</b></p>
             <p>Email: <b>${email}</b></p>
             <p>Message: <i>${message}</i></p>

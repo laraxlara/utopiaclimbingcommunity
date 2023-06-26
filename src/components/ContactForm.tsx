@@ -8,6 +8,8 @@ import { FormattedMessage } from "react-intl";
 import Loading from "./Loading";
 
 const valuesSchema = yup.object({
+  name: yup.string(),
+  surname: yup.string(),
   email: yup.string(),
   subject: yup.string(),
   message: yup.string(),
@@ -20,6 +22,8 @@ function ContactForm() {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
   const [values, setValues] = useState<Values>({
+    name: "",
+    surname: "",
     email: "",
     subject: "",
     message: "",
@@ -38,7 +42,13 @@ function ContactForm() {
     setValues(values);
     setLoading(true);
 
-    if (values.email && values.subject && values.message) {
+    if (
+      values.name &&
+      values.surname &&
+      values.email &&
+      values.subject &&
+      values.message
+    ) {
       try {
         const res = await fetch(`api/contact/`, {
           method: "POST",
@@ -93,6 +103,36 @@ function ContactForm() {
       ) : (
         <>
           <form onSubmit={(e) => onSubmitForm(e)} className="space-y-8">
+            <div className="flex gap-10">
+              <div>
+                <label className="block mb-2 text-[2rem] text-gray-700 dark:text-gray-300">
+                  <FormattedMessage id="page.home.contact.n" />
+                </label>
+                <input
+                  type="text"
+                  value={values.name}
+                  onChange={handleChange}
+                  id="name"
+                  className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-[2rem] rounded-lg block w-full p-2.5 dark:bg-[#18181b] dark:border-gray-600 dark:placeholder-gray-600 dark:text-white"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div>
+                <label className="block mb-2 text-[2rem] text-gray-700 dark:text-gray-300">
+                  <FormattedMessage id="page.home.contact.su" />
+                </label>
+                <input
+                  type="text"
+                  value={values.surname}
+                  onChange={handleChange}
+                  id="surname"
+                  className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-[2rem] rounded-lg block w-full p-2.5 dark:bg-[#18181b] dark:border-gray-600 dark:placeholder-gray-600 dark:text-white"
+                  placeholder="Surname"
+                  required
+                />
+              </div>
+            </div>
             <div>
               <label className="block mb-2 text-[2rem] text-gray-700 dark:text-gray-300">
                 <FormattedMessage id="page.home.contact.e" />
