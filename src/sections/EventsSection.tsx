@@ -10,7 +10,7 @@ const Section4 = () => {
   const event1 = {
     src: eventImg1,
     alt: "Utopia",
-    name: "U RITMU PRIRODE",
+    name: "SPOSOBNOST ZA LJUBAV",
     date: <FormattedMessage id="page.home.event.date.one" />,
     description: <FormattedMessage id="page.home.event.one" />,
   };
