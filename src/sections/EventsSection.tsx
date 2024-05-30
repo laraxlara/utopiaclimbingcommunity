@@ -10,24 +10,24 @@ const Section4 = () => {
   const event1 = {
     src: eventImg1,
     alt: "Utopia",
-    name: "SPOSOBNOST ZA LJUBAV",
+    name: "Rti Utopia Fest",
     date: <FormattedMessage id="page.home.event.date.one" />,
     description: <FormattedMessage id="page.home.event.one" />,
   };
-  const event2 = {
-    src: eventImg2,
-    alt: "Hata Yin Flow",
-    name: "Hata Yin Flow - Yoga retreat",
-    date: <FormattedMessage id="page.home.event.date.two" />,
-    description: <FormattedMessage id="page.home.event.two" />,
-  };
-  const event3 = {
-    src: eventImg3,
-    alt: "Yoga Retreat",
-    name: "VIDIM TE - Yoga Retreat",
-    date: <FormattedMessage id="page.home.event.date.three" />,
-    description: <FormattedMessage id="page.home.event.three" />,
-  };
+  // const event2 = {
+  //   src: eventImg2,
+  //   alt: "Hata Yin Flow",
+  //   name: "Hata Yin Flow - Yoga retreat",
+  //   date: <FormattedMessage id="page.home.event.date.two" />,
+  //   description: <FormattedMessage id="page.home.event.two" />,
+  // };
+  // const event3 = {
+  //   src: eventImg3,
+  //   alt: "Yoga Retreat",
+  //   name: "VIDIM TE - Yoga Retreat",
+  //   date: <FormattedMessage id="page.home.event.date.three" />,
+  //   description: <FormattedMessage id="page.home.event.three" />,
+  // };
 
   return (
     <section
@@ -40,8 +40,6 @@ const Section4 = () => {
         </h3>
         <div className="flex flex-col xl:flex-row gap-12">
           <EvenCard {...event1} />
-          <EvenCard {...event2} />
-          <EvenCard {...event3} />
         </div>
       </div>
     </section>
