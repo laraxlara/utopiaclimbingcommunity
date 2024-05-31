@@ -2,7 +2,7 @@ import React from "react";
 import EvenCard from "@/components/EventCard";
 import { FormattedMessage } from "react-intl";
 
-import eventImg1 from "../../public/images/e1.jpg";
+import eventImg1 from "../../public/images/1 - Copy.jpeg";
 import eventImg2 from "../../public/images/e2.jpg";
 import eventImg3 from "../../public/images/e3.jpg";
 
